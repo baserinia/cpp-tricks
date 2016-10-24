@@ -6,8 +6,8 @@
 // name, and variable value to stderr.
 
 // If you run the sample code, you will get something like this:
-//	file "macro.cpp", line 15: var = 0
-//	file "macro.cpp", line 16: &var = 0x7fffc30d1d6c
+//	file "log.cpp", line 15: var = 0
+//	file "log.cpp", line 16: &var = 0x7fffc30d1d6c
 
 #include <iostream>
 
