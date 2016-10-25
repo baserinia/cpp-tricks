@@ -6,23 +6,23 @@
 // name, and variable value to stderr.
 
 // If you run the sample code, you will get something like this:
-//  file "log.cpp", line 15: var = 0
-//  file "log.cpp", line 16: &var = 0x7fffc30d1d6c
+// file "log.cpp", line 24: var = 0
+// file "log.cpp", line 25: &var = 0x7fff66e6c06c
 
 #include <iostream>
 
 #ifndef LOG
-  #define LOG(X) { \
-    std::cerr << "file \"" << __FILE__ << "\", line " << __LINE__ << ": "; \
-    std::cerr << #X" = " << (X) << std::endl; \
-  }
+    #define LOG(X) { \
+        std::cerr << "file \"" << __FILE__ << "\", line " << __LINE__ << ": "; \
+        std::cerr << #X" = " << (X) << std::endl; \
+    }
 #endif
 
 int main()
 {
-	int var;
-	LOG(var);
-	LOG(&var);
-	return 0;
+    int var;
+    LOG(var);
+    LOG(&var);
+    return 0;
 }
 
